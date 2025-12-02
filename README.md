@@ -17,3 +17,8 @@ Jawab : parameter dalam fungsi digunakan untuk menerima data atau nilai dari lua
 Jawab : fungsi Menu() menggunakan parameter namaPelanggan dan isMember karena fungsi tersebut perlu menyesuaikan tampilan menu berdasarkan data pelanggan.
 - namaPelanggan : digunakan agar program dapat menampilkan sapaan khusus, sehingga menu terlihat lebih personal.
 - isMember : digunakan untuk cek apakah pelanggan adalah member, sehingga program bisa menampilkan informasi diskon 10% hanya bagi pelanggan yang berstatus member.
+3. Apakah parameter sama dengan variabel? Jelaskan.
+Jawab : parameter bukan variabel yang sama persis, namun mirip karena sama-sama digunakan untuk menyimpan nilai.
+- parameter adalah variabel khusus yang didefinisikan dalam deklarasi fungsi dan digunakan untuk menerima nilai dari luar fungsi.
+- variabel adalah penyimpanan data yang dibuat di dalam fungsi atau kelas untuk keperluan proses dalam program.
+kesimpulannya, parameter adalah variabel yang digunakan untuk menerima input saat fungsi dipanggil.
