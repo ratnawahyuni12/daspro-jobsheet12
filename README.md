@@ -27,3 +27,8 @@ Jawab : parameter isMember berfungsi sebagai penentu apakah pelanggan adalah mem
 - jika isMember bernilai true, maka pesan tentang diskon member akan ditampilkan.
 - jika isMember bernilai false, kondisi if tidak terpenuhi sehingga pesan diskon tidak muncul.
 jadi, perbedaannya terletak pada muncul atau tidaknya informasi diskon 10% pada output.
+5. Apa yang akan terjadi jika memanggil fungsi Menu() tanpa menyertakan parameter namaPelanggan dan isMember?
+Jawab : jika memanggil fungsi Menu() tanpa menyertakan parameter namaPelanggan dan isMember, maka akan terjadi error (compile-time error). karena fungsi wajib menerima 2 parameter. yaitu : 
+- String : nama pelanggan.
+- boolean : status member.
+apabila java tidak menemukan fungsi Menu() yang cocok dengan panggilan tersebut, maka akan terjadi error.
