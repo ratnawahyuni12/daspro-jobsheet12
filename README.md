@@ -32,3 +32,4 @@ Jawab : jika memanggil fungsi Menu() tanpa menyertakan parameter namaPelanggan d
 - String : nama pelanggan.
 - boolean : status member.
 apabila java tidak menemukan fungsi Menu() yang cocok dengan panggilan tersebut, maka akan terjadi error.
+6. Modifikasi kode di atas dengan menambahkan parameter baru kodePromo (String). Jika kodePromo adalah "DISKON50", tampilkan berikan diskon 50%. Jika kodePromo adalah "DISKON30", tampilkan berikan diskon 30%. Jika tidak ada kode promo yang berlaku, tampilkan kode invalid.
