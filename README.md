@@ -22,3 +22,8 @@ Jawab : parameter bukan variabel yang sama persis, namun mirip karena sama-sama 
 - parameter adalah variabel khusus yang didefinisikan dalam deklarasi fungsi dan digunakan untuk menerima nilai dari luar fungsi.
 - variabel adalah penyimpanan data yang dibuat di dalam fungsi atau kelas untuk keperluan proses dalam program.
 kesimpulannya, parameter adalah variabel yang digunakan untuk menerima input saat fungsi dipanggil.
+4. Jelaskan bagaimana cara kerja parameter isMember pada fungsi Menu(). Apa perbedaan output ketika isMember bernilai true dan ketika false?
+Jawab : parameter isMember berfungsi sebagai penentu apakah pelanggan adalah member atau bukan. saat fungsi Menu() dipanggil, nilai true atau false dikirim ke parameter tersebut.
+- jika isMember bernilai true, maka pesan tentang diskon member akan ditampilkan.
+- jika isMember bernilai false, kondisi if tidak terpenuhi sehingga pesan diskon tidak muncul.
+jadi, perbedaannya terletak pada muncul atau tidaknya informasi diskon 10% pada output.
