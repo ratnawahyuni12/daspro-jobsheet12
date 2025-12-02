@@ -9,3 +9,7 @@ Jawab : iya, daftar menu pada program kafe dapat ditampilkan tanpa menggunakan f
 Jawab : Menggunakan fungsi Menu() membuat program lebih rapi, mudah dirawat, dan lebih efisien. Menu dapat ditampilkan berulang kali tanpa menulis ulang kode. Perubahan menu juga cukup dilakukan di satu tempat saja. Selain itu, fungsi Menu() membuat kode lebih mudah dibaca dan dikembangkan dibanding menulis semua perintah langsung di dalam main().
 4. Uraikan secara singkat alur eksekusi program ketika fungsi Menu() dipanggil dari main (mulai dari program dijalankan sampai daftar menu tampil di layar).
 Jawab : Ketika program dijalankan, eksekusi dimulai dari fungsi main(). di dalam main() perintah Menu() dipanggil. program kemudian berpindah ke fungsi Menu(), menjalankan seluruh perintah System.out.println() di dalamnya, dan menampilkan daftar menu ke layar. Setelah selesai, eksekusi kembali ke main() dan program berlanjut atau berakhir sesuai kode berikutnya.
+
+Pertanyaan Percobaan 2
+1. Apakah kegunaan parameter di dalam fungsi?
+Jawab : parameter dalam fungsi digunakan untuk menerima data atau nilai dari luar fungsi sehingga fungsi dapat bekerja secara fleksibel. dengan parameter, fungsi bisa menampilkan hasil atau melakukan proses yang berbeda tergantung nilai yang diterimanya. misalnya, parameter namaPelanggan dan isMember pada program di percobaan 2 digunakan untuk menyesuaikan tampilan menu sesuai nama pelanggan dan status membernya.
