@@ -13,3 +13,7 @@ Jawab : Ketika program dijalankan, eksekusi dimulai dari fungsi main(). di dalam
 Pertanyaan Percobaan 2
 1. Apakah kegunaan parameter di dalam fungsi?
 Jawab : parameter dalam fungsi digunakan untuk menerima data atau nilai dari luar fungsi sehingga fungsi dapat bekerja secara fleksibel. dengan parameter, fungsi bisa menampilkan hasil atau melakukan proses yang berbeda tergantung nilai yang diterimanya. misalnya, parameter namaPelanggan dan isMember pada program di percobaan 2 digunakan untuk menyesuaikan tampilan menu sesuai nama pelanggan dan status membernya.
+2. Jelaskan mengapa pada percobaan ini fungsi Menu() menggunakan parameter namaPelanggan dan isMember?
+Jawab : fungsi Menu() menggunakan parameter namaPelanggan dan isMember karena fungsi tersebut perlu menyesuaikan tampilan menu berdasarkan data pelanggan.
+- namaPelanggan : digunakan agar program dapat menampilkan sapaan khusus, sehingga menu terlihat lebih personal.
+- isMember : digunakan untuk cek apakah pelanggan adalah member, sehingga program bisa menampilkan informasi diskon 10% hanya bagi pelanggan yang berstatus member.
