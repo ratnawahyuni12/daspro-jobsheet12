@@ -157,3 +157,5 @@ pada program percobaan 5 :
 - hitungLuas menggunakan parameter karena butuh nilai panjang dan lebar.
 - hitungVolume juga menggunakan parameter karena membutuhkan tinggi serta nilai panjang dan lebar untuk menghitung volume balok.
 fungsi main() tidak memakai parameter tambahan karena hanya bertugas menjalankan alur program, bukan menghitung atau memproses sesuatu.
+6. Jelaskan kapan sebuah fungsi sebaiknya memiliki nilai kembalian (return value) dan kapan tidak perlu memiliki nilai kembalian, dengan mengacu pada fungsi main, hitungLuas, dan hitungVolume.
+Jawab : fungsi sebaiknya memiliki nilai kembalian (return value) jika fungsi menghasilkan suatu perhitungan atau informasi yang perlu digunakan kembali, seperti hitungLuas() dan hitungVolume() yang mengembalikan nilai luas dan volume. sebaliknya, fungsi tidak perlu nilai kembalian (return value) jika hanya menampilkan output atau menjalankan proses tanpa menghasilkan nilai yang harus dikembalikan, seperti fungsi main() yang hanya mengatur alur program.
