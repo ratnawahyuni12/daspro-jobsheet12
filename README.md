@@ -46,3 +46,12 @@ Jawab : suatu fungsi membutuhkan nilai kembalian (return value) apabila fungsi t
 - fungsi hitungTotalHarga21() memiliki return value karena harus mengembalikan total harga untuk dipakai dan ditampilkan di main().
 sedangkan fungsi tidak perlu memiliki return value apabila fungsinya hanya menjalankan proses tanpa harus menghasilkan nilai. contohnya pada program kafe :
 - fungsi Menu() tidak mengembalikan nilai karena hanya menampilkan daftar menu dan informasi promo, tidak menghasilkan angka atau data yang dibutuhkan kembali oleh program.
+2. Fungsi hitungTotalHargaNoAbsen saat ini mengembalikan total harga berdasarkan pilihanMenu dan jumlahPesanan. Sebutkan tipe data nilai kembalian dan dua buah parameter yang digunakan fungsi tersebut. Jelaskan arti masing-masing parameter dalam konteks program kafe.
+Jawab : tipe data nilai kembalian yang digunakan adalah int, karena fungsi hitungTotalHargaNoAbsen menghasilkan total harga dalam bentuk angka bulat (integer). dua buah parameter yang digunakan fungsi tersebut :
+(1.) int pilihanMenu :
+   - menyimpan nomor menu yang dipilih pelanggan (1 sampai 6).
+   - digunakan untuk mencari harga sesuai menu dalam array harga.
+(2.) int jumlahPesanan :
+   - menyimpan berapa banyak porsi atau item yang dipesan pelanggan.
+   - digunakan untuk menghitung total harga = harga * jumlah pesanan.
+jadi, fungsi menggunakan parameter tersebut agar dapat menghitung total harga sesuai menu dan jumlah pesanan pelanggan secara tepat.
