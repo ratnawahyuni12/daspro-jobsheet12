@@ -151,3 +151,9 @@ Jawab :
 - fungsi tanpa parameter digunakan jika tugasnya hanya menampilkan sesuatu atau menjalankan proses yang tidak membutuhkan input tambahan.
 - fungsi memiliki nilai kembalian (return value) jika menghasilkan hasil perhitungan yang perlu digunakan lagi, seperti menghitung luas atau total harga.
 - fungsi tidak perlu nilai kembalikan jika hanya menampilkan output di layar atau menjalanlkan proses tanpa mengembalikan hasil apa pun.
+5. Jelaskan kapan sebuah fungsi sebaiknya menggunakan parameter dan kapan fungsi boleh tanpa parameter, dengan mengacu pada fungsi hitungLuas dan hitungVolume di Percobaan 5.
+Jawab : fungsi sebaiknya menggunakan parameter ketika fungsi membutuhkan data dari luar agar bisa menghitung atau memproses sesuatu. contohnya, hitungLuas(p, l) membutuhkan parameter panjang dan lebar karena nilai tersebut tidak dibuat di dalam fungsi. sebaliknya, fungsi boleh tanpa parameter jika semua data yang dibutuhkan sudah tersedia di dalam fungsi tersebut atau tidak perlu menerima input dari luar.
+pada program percobaan 5 :
+- hitungLuas menggunakan parameter karena butuh nilai panjang dan lebar.
+- hitungVolume juga menggunakan parameter karena membutuhkan tinggi serta nilai panjang dan lebar untuk menghitung volume balok.
+fungsi main() tidak memakai parameter tambahan karena hanya bertugas menjalankan alur program, bukan menghitung atau memproses sesuatu.
