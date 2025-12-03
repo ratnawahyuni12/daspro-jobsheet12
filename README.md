@@ -63,3 +63,5 @@ Pertanyaan Percobaan 4
 1. Jelaskan mengapa penulisan parameter di praktikum 4 ditulis dengan String... namaPengunjung!
 Jawab : penulisan parameter String... namaPengunjung digunakan karena pada percobaan 4 fungsi daftarPengunjung() harus bisa menerima jumlah argumen yang tidak tentu, bisa satu nama, dua nama, atau banyak nama sekaligus. String... adalah varargs (variabel argument), yaitu cara di Java untuk membuat parameter yang dapat menerima 0 atau lebih nilai tanpa perlu membuat array secara manual. jadi, penulisan String... namaPengunjung dipakai agar fungsi lebih fleksibel dan dapat menerima banyak nama pengunjung sekaligus tanpa harus menentukan jumlahnya.
 2. Modifikasi method daftarPengunjung menggunakan for-each loop.
+3. Bisakah menggunakan dua tipe data varaargs dalam satu fungsi? Jelaskan jawaban Anda berdasarkan aturan varargs di Java, dan berikan contohnya!
+Jawab : tidak. java tidak mengizinkan dua varargs dalam satu fungsi, karena dapat menyebabkan error. hanya boleh ada satu varargs, dan harus berada di parameter paling akhir.
