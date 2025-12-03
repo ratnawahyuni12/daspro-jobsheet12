@@ -57,3 +57,4 @@ Jawab : tipe data nilai kembalian yang digunakan adalah int, karena fungsi hitun
 jadi, fungsi menggunakan parameter tersebut agar dapat menghitung total harga sesuai menu dan jumlah pesanan pelanggan secara tepat.
 3. Modifikasi kode di atas sehingga fungsi hitungTotalHargaNoAbsen dapat menerima kodePromo. Jika kodePromo adalah "DISKON50", maka mendapat diskon 50% dari totalHarga dan tampilkan diskon. Jika kodePromo adalah "DISKON30", maka mendapat diskon 30% dari totalHarga dan tampilkan diskon. Jika tidak ada kode 
 promo yang berlaku, tampilkan kode invalid dan tidak ada pengurangan total harga totalHarga.
+4. Modifikasi kode di atas sehingga bisa memilih beberapa jenis menu berbeda serta menampilkan total keseluruhan pesanan. Bagaimana memodifikasi program sehingga pengguna dapat: memesan lebih dari satu jenis menu (misalnya menu 1 dan 3 sekaligus), dan menampilkan total keseluruhan pesanan (gabungan dari semua jenis menu)?
