@@ -72,3 +72,38 @@ output yang dihasilkan :
 Daftar Nama Pengunjung:
 
 (tidak ada daftar nama karena array kosong).
+
+Pertanyaan Percobaan 5
+1.   Sebutkan tahapan dan urutan eksekusi program pada Percobaan 5, mulai dari program dijalankan hingga menampilkan luas persegi panjang dan volume balok!
+Jawab : tahapan dan urutan eksekusi program pada Percobaan 5 :
+(1.) program dijalankan : eksekusi dimulai dari fungsi main() karena itu adalah titik awal program Java. 
+(2.) Scanner dibuat untuk menerima input : dengan adanya Scanner input = new Scanner(System.in), program siap membaca nilai panjang, lebar, dan tinggi dari pengguna.
+(3.) program meminta input panjang : dengan adanya 
+System.out.println("Masukkan panjang");
+p = input.nextInt();
+pengguna memasukkan nilai panjang yang disimpan ke variabel p.
+(4.) program meminta input lebar : dengan adanya 
+System.out.println("Masukkan lebar");
+l = input.nextInt();
+pengguna memasukkan nilai lebar yang disimpan ke variabel l.
+(5.) program meminta input tinggi : dengan adanya 
+System.out.println("Masukkan tinggi");
+t = input.nextInt();
+pengguna memasukkan nilai tinggi yang disimpan ke variabel t.
+(6.) program memanggil fungsi hitungLuas : menggunakan 
+L = hitungLuas(p, l); 
+di dalam hitungLuas :
+- parameter pjg menerima nilai p.
+- parameter lb menerima nilai l.
+- dihitung: Luas = p * l.
+- nilai luas dikembalikan ke main.
+(7.) program menampilkan luas persegi panjang : menggunakan System.out.println("Luas persegi panjang adalah " + L);
+(8.) program memanggil fungsi hitungVolume : menggunakan vol = hitungVolume(t, p, l);
+di dalam hitungVolume :
+- parameter tinggi menerima nilai t.
+- parameter a menerima p, dan b menerima l.
+- hitungVolume() memanggil hitungLuas(a, b) lagi untuk menghitung alas: luas alas = p * l.
+- volume dihitung: menggunakan volume = luasAlas * tinggi.
+- nilai volume dikembalikan ke main.
+(9.) program menampilkan volume balok : menggunakan System.out.println("Volume balok adalah " + vol);
+(10.) Scanner ditutup menggunakan input.close(); dan program selesai.
