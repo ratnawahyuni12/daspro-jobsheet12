@@ -134,3 +134,14 @@ di fungsi hitungVolume(5, 4, 3) :
 - nilai 60 dikembalikan ke main.
 (8.) program menampilkan Volume balok adalah 60
 (9.) program selesai.
+3. Apakah output dari program di bawah ini kemudian jelaskan alur jalannya program tersebut!
+output dari program di soal adalah 1234567
+berikut alur jalannya program tersebut :
+(1.) main() dipanggil
+(2.) temp = Jumlah(1, 1) --> temp = 2
+(3.) TampilJumlah(temp, 5) --> memanggil TampilJumlah(2, 5)
+(4.) TampilJumlah memanggil :
+- TampilHinggaKei(Jumlah(2, 5))
+- Jumlah(2, 5) = 7
+(5.) TampilHinggaKei(7) mencetak angka 1 sampai 7
+(6.) output --> 1234567
