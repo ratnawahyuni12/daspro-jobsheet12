@@ -48,16 +48,30 @@ public class Kafe21 {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        Menu("Andi", true, "DISKON50");
 
+        System.out.print("Masukkan kode promo: ");
+        String kodePromo = sc.nextLine();
+
+        Menu("Andi", true, kodePromo);
+
+        System.out.print("\nBerapa jenis menu yang ingin dipesan? ");
+        int jumlahJenisMenu = sc.nextInt();
+
+        int totalAkhir = 0;
+
+        for (int i = 0; i < jumlahJenisMenu; i++) {
+        System.out.print("\n===== Pesanan ke-" + (i + 1) + "=====");
         System.out.print("\nMasukkan nomor menu yang ingin Anda pesan: ");
         int pilihanMenu = sc.nextInt();
+
         System.out.print("Masukkan jumlah item yang ingin dipesan: ");
         int banyakItem = sc.nextInt();
 
-        int totalHarga = hitungTotalHarga21(pilihanMenu, banyakItem, "DISKON50");
+        int totalHarga = hitungTotalHarga21(pilihanMenu, banyakItem, kodePromo);
+        totalAkhir += totalHarga;
+        }
 
-        System.out.println("Total harga untuk pesanan Anda: Rp " + totalHarga);
+        System.out.println("Total harga untuk pesanan Anda: Rp " + totalAkhir);
 
         sc.close();
     }
