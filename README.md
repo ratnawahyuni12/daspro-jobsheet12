@@ -39,3 +39,10 @@ Menu("Budi", true, "DISKON30");
 8. Menurut Anda, apakah penggunaan parameter namaPelanggan dan isMember pada fungsi Menu() membuat program lebih mudah dibaca dan dikembangkan dibandingkan jika nilai-nilai tersebut ditulis langsung di dalam fungsi tanpa parameter? Jelaskan alasan Anda.
 jawab : Iya, penggunaan parameter namaPelanggan dan isMember membuat program lebih mudah dibaca dan dikembangkan. dengan parameter, fungsi Menu() menjadi fleksibel karena dapat menampilkan menu untuk pelanggan mana pun tanpa harus mengubah isi fungsi. jika nilai seperti nama pelanggan atau status member ditulis langsung di dalam fungsi, maka fungsi hanya cocok untuk satu orang saja dan sulit digunakan kembali. selain itu, setiap kali ingin menampilkan menu untuk pelanggan berbeda, programmer harus mengedit kode secara manual. 
 dengan parameter, fungsi lebih rapi, mudah dipahami, dan lebih mudah diperluas untuk kebutuhan lain di masa depan.
+
+Pertanyaan Percobaan 3
+1. Jelaskan secara singkat kapan suatu fungsi membutuhkan nilai kembalian (return value) dan kapan fungsi tidak perlu mengembalikan nilai. Berikan minimal satu contoh dari program kafe pada Percobaan 3 untuk masing-masing kasus.
+Jawab : suatu fungsi membutuhkan nilai kembalian (return value) apabila fungsi tersebut menghasilkan sebuah nilai yang akan digunakan kembali oleh program. contohnya pada program kafe :
+- fungsi hitungTotalHarga21() memiliki return value karena harus mengembalikan total harga untuk dipakai dan ditampilkan di main().
+sedangkan fungsi tidak perlu memiliki return value apabila fungsinya hanya menjalankan proses tanpa harus menghasilkan nilai. contohnya pada program kafe :
+- fungsi Menu() tidak mengembalikan nilai karena hanya menampilkan daftar menu dan informasi promo, tidak menghasilkan angka atau data yang dibutuhkan kembali oleh program.
