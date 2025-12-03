@@ -62,3 +62,4 @@ promo yang berlaku, tampilkan kode invalid dan tidak ada pengurangan total harga
 Pertanyaan Percobaan 4
 1. Jelaskan mengapa penulisan parameter di praktikum 4 ditulis dengan String... namaPengunjung!
 Jawab : penulisan parameter String... namaPengunjung digunakan karena pada percobaan 4 fungsi daftarPengunjung() harus bisa menerima jumlah argumen yang tidak tentu, bisa satu nama, dua nama, atau banyak nama sekaligus. String... adalah varargs (variabel argument), yaitu cara di Java untuk membuat parameter yang dapat menerima 0 atau lebih nilai tanpa perlu membuat array secara manual. jadi, penulisan String... namaPengunjung dipakai agar fungsi lebih fleksibel dan dapat menerima banyak nama pengunjung sekaligus tanpa harus menentukan jumlahnya.
+2. Modifikasi method daftarPengunjung menggunakan for-each loop.
