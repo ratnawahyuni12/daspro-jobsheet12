@@ -145,3 +145,9 @@ berikut alur jalannya program tersebut :
 - Jumlah(2, 5) = 7
 (5.) TampilHinggaKei(7) mencetak angka 1 sampai 7
 (6.) output --> 1234567
+4. Pada saat apakah fungsi yang kita buat harus menggunakan parameter atau tidak? Pada saat apakah fungsi yang kita buat harus memiliki nilai kembalian atau tidak? Jelaskan!
+Jawab : 
+- fungsi menggunakan parameter ketika fungsi tersebut membutuhkan data dari luar agar dapat bekerja, misalnya menerima panjang, lebar atau pilihan menu yang berbeda-beda.
+- fungsi tanpa parameter digunakan jika tugasnya hanya menampilkan sesuatu atau menjalankan proses yang tidak membutuhkan input tambahan.
+- fungsi memiliki nilai kembalian (return value) jika menghasilkan hasil perhitungan yang perlu digunakan lagi, seperti menghitung luas atau total harga.
+- fungsi tidak perlu nilai kembalikan jika hanya menampilkan output di layar atau menjalanlkan proses tanpa mengembalikan hasil apa pun.
