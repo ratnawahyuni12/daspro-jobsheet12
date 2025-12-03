@@ -55,3 +55,5 @@ Jawab : tipe data nilai kembalian yang digunakan adalah int, karena fungsi hitun
    - menyimpan berapa banyak porsi atau item yang dipesan pelanggan.
    - digunakan untuk menghitung total harga = harga * jumlah pesanan.
 jadi, fungsi menggunakan parameter tersebut agar dapat menghitung total harga sesuai menu dan jumlah pesanan pelanggan secara tepat.
+3. Modifikasi kode di atas sehingga fungsi hitungTotalHargaNoAbsen dapat menerima kodePromo. Jika kodePromo adalah "DISKON50", maka mendapat diskon 50% dari totalHarga dan tampilkan diskon. Jika kodePromo adalah "DISKON30", maka mendapat diskon 30% dari totalHarga dan tampilkan diskon. Jika tidak ada kode 
+promo yang berlaku, tampilkan kode invalid dan tidak ada pengurangan total harga totalHarga.
