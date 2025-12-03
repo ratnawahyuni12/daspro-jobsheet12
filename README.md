@@ -107,3 +107,30 @@ di dalam hitungVolume :
 - nilai volume dikembalikan ke main.
 (9.) program menampilkan volume balok : menggunakan System.out.println("Volume balok adalah " + vol);
 (10.) Scanner ditutup menggunakan input.close(); dan program selesai.
+2. Tuliskan output yang dihasilkan program HitungBalokNoAbsen jika pengguna memasukkan panjang = 4, lebar = 3, dan tinggi = 5. Jelaskan secara singkat alur jalannya program sampai output tersebut muncul.
+Jawab : output yang dihasilkan program HitungBalokNoAbsen jika pengguna memasukkan input sesuai dengan soal adalah :
+Masukkan panjang
+4
+Masukkan lebar
+3
+Masukkan tinggi
+5
+Luas persegi panjang adalah 12
+Volume balok adalah 60
+alur jalannya program :
+(1.) program dijalankan, eksekusi dimulai dari fungsi main().
+(2.) program menampilkan Masukkan panjang, pengguna memasukkan 4 yang disimpan ke variabel p.
+(3.) program menampilkan Masukkan lebar, pengguna memasukkan 3 yang disimpan ke variabel l.
+(4.) program menampilkan Masukkan tinggi, pengguna memasukkan 5 yang disimpan ke variabel t.
+(5.) program memanggil L = hitungLuas(p, l);
+di fungsi hitungLuas(4,3) :
+- luas = 4 * 3 = 12.
+- nilai 12 dikembalikan ke main.
+(6.) program menampilkan Luas persegi panjang adalah 12
+(7.) program memanggil vol = hitungVolume(t, p, l);
+di fungsi hitungVolume(5, 4, 3) :
+- fungsi ini memanggil hitungLuas(4, 3) yang menghasilkan 12.
+- volume = luas * tinggi = 12 * 5 = 60.
+- nilai 60 dikembalikan ke main.
+(8.) program menampilkan Volume balok adalah 60
+(9.) program selesai.
