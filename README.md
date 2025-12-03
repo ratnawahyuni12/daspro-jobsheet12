@@ -58,3 +58,7 @@ jadi, fungsi menggunakan parameter tersebut agar dapat menghitung total harga se
 3. Modifikasi kode di atas sehingga fungsi hitungTotalHargaNoAbsen dapat menerima kodePromo. Jika kodePromo adalah "DISKON50", maka mendapat diskon 50% dari totalHarga dan tampilkan diskon. Jika kodePromo adalah "DISKON30", maka mendapat diskon 30% dari totalHarga dan tampilkan diskon. Jika tidak ada kode 
 promo yang berlaku, tampilkan kode invalid dan tidak ada pengurangan total harga totalHarga.
 4. Modifikasi kode di atas sehingga bisa memilih beberapa jenis menu berbeda serta menampilkan total keseluruhan pesanan. Bagaimana memodifikasi program sehingga pengguna dapat: memesan lebih dari satu jenis menu (misalnya menu 1 dan 3 sekaligus), dan menampilkan total keseluruhan pesanan (gabungan dari semua jenis menu)?
+
+Pertanyaan Percobaan 4
+1. Jelaskan mengapa penulisan parameter di praktikum 4 ditulis dengan String... namaPengunjung!
+Jawab : penulisan parameter String... namaPengunjung digunakan karena pada percobaan 4 fungsi daftarPengunjung() harus bisa menerima jumlah argumen yang tidak tentu, bisa satu nama, dua nama, atau banyak nama sekaligus. String... adalah varargs (variabel argument), yaitu cara di Java untuk membuat parameter yang dapat menerima 0 atau lebih nilai tanpa perlu membuat array secara manual. jadi, penulisan String... namaPengunjung dipakai agar fungsi lebih fleksibel dan dapat menerima banyak nama pengunjung sekaligus tanpa harus menentukan jumlahnya.
