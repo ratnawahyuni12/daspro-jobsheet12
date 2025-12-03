@@ -65,3 +65,10 @@ Jawab : penulisan parameter String... namaPengunjung digunakan karena pada perco
 2. Modifikasi method daftarPengunjung menggunakan for-each loop.
 3. Bisakah menggunakan dua tipe data varaargs dalam satu fungsi? Jelaskan jawaban Anda berdasarkan aturan varargs di Java, dan berikan contohnya!
 Jawab : tidak. java tidak mengizinkan dua varargs dalam satu fungsi, karena dapat menyebabkan error. hanya boleh ada satu varargs, dan harus berada di parameter paling akhir.
+4. Jelaskan apa yang terjadi jika fungsi daftarPengunjung dipanggil tanpa argumen. Apakah program akan error saat kompilasi, error saat dijalankan, atau tetap berjalan? Jika tetap berjalan, bagaimana output yang dihasilkan?
+Jawab : pemanggilan fungsi daftarPengunjung() tanpa argumen tetap boleh dilakukan dan tidak akan menyebabkan error, baik saat kompilasi maupun saat program dijalankan. hal ini terjadi karena parameter String... namaPengunjung adalah varargs, yang berarti jumlah argumennya boleh 0, 1, atau lebih. jika tidak ada argumen yang diberikan, maka namaPengunjung akan menjadi array kosong dengan panjang 0. 
+output yang dihasilkan :
+
+Daftar Nama Pengunjung:
+
+(tidak ada daftar nama karena array kosong).
