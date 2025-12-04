@@ -3,11 +3,9 @@ import java.util.Scanner;
 public class RekapPenjualanCafe21 {
 
     static Scanner sc = new Scanner(System.in);
-    static int[][] penjualan = new int[5][7];
-    static String[] menu = {"Kopi", "Teh", "Es Kelapa Muda", "Roti Bakar", "Gorengan"};
-
+    
     // 1(a). input data tiap menu (array 2 dimensi)
-    static void inputDataPenjualan() {
+    static void inputDataPenjualan(int[][] penjualan, String[] menu) {
         System.out.println("\n=====- INPUT DATA PENJUALAN -=====");
 
         for (int i = 0; i < menu.length; i++) {
@@ -21,7 +19,7 @@ public class RekapPenjualanCafe21 {
     }
 
     // 2(a). tampil seluruh data penjualan dari hari pertama hingga terakhir (tabel)
-    static void tampilDataPenjualan(int[][] penjualan) {
+    static void tampilDataPenjualan(int[][] penjualan, String[] menu) {
         System.out.println("\n=====- TAMPIL TABEL DATA PENJUALAN -=====");
 
         System.out.printf("| %-15s |", "");
@@ -41,8 +39,8 @@ public class RekapPenjualanCafe21 {
     }
 
     // 3(a). tampil menu dengan penjualan tertinggi selama 7 hari (tampil nama dan totalnya)
-    static String tampilMenuTertinggi (int[][] penjualan) {
-        int totalTertinggi = 0;
+    static String tampilMenuTertinggi (int[][] penjualan, String[] menu) {
+        int totalTertinggi = -1;
         String namaMenu = "";
 
         System.out.println("\n=====- TAMPIL MENU TERTINGGI -=====");
@@ -63,8 +61,8 @@ public class RekapPenjualanCafe21 {
         return namaMenu;
     }
     // 4(a). tampil rata-rata penjualan tiap menu selama 7 hari (tampil nama dan rata-ratanya)
-    static double[] rataRataPenjualan (int[][] penjualan) {
-        double[] hasilRata = new double[5];
+    static double[] rataRataPenjualan (int[][] penjualan, String[] menu) {
+        double[] hasilRata = new double[menu.length];
 
         System.out.println("\n=====- RATA-RATA PENJUALAN -=====");
         for (int i = 0; i < menu.length; i++) {
@@ -72,7 +70,7 @@ public class RekapPenjualanCafe21 {
             for (int j = 0; j < penjualan[i].length; j++) {
                 total += penjualan[i][j];
             }
-            double rataRata = total / 7.0;
+            double rataRata = total / penjualan[i].length;
             hasilRata[i] = rataRata;
             System.out.println(menu[i] + " : " + rataRata);
         }
@@ -82,16 +80,32 @@ public class RekapPenjualanCafe21 {
 
     public static void main(String[] args) {
 
+        System.out.print("Masukkan jumlah menu : ");
+        int jumlahMenu = sc.nextInt();
+        sc.nextLine();
+
+        System.out.print("Masukkan jumlah hari penjualan : ");
+        int jumlahHari = sc.nextInt();
+
+        int[][] penjualan = new int[jumlahMenu][jumlahHari];
+        String[] menu = new String[jumlahMenu];
+
+        sc.nextLine();
+        for (int i = 0; i < menu.length; i++) {
+            System.out.print("Masukkan nama menu ke-" + (i + 1) + " : ");
+            menu[i] = sc.nextLine();
+        }
+
         // 1(a)
-        inputDataPenjualan();
+        inputDataPenjualan(penjualan, menu);
 
         // 2(a)
-        tampilDataPenjualan(penjualan);
+        tampilDataPenjualan(penjualan, menu);
 
         // 3(a)
-        tampilMenuTertinggi(penjualan);
+        tampilMenuTertinggi(penjualan, menu);
 
         // 4(a)
-        rataRataPenjualan(penjualan);
+        rataRataPenjualan(penjualan, menu);
     }
 }
